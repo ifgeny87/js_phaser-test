@@ -13,7 +13,7 @@ export default class GameScene01 extends Phaser.Scene {
   }
 
   preload() {
-    this.load.setBaseURL('https://raw.githubusercontent.com/mariyadavydova/starfall-phaser3-typescript/master/assets/');
+    this.load.setBaseURL('/assets');
     this.load.image('star', 'star.png');
     this.load.image('sand', 'sand.jpg');
   }
