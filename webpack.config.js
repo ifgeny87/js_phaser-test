@@ -46,28 +46,22 @@ module.exports = {
       },
     ]),
     new HtmlWebpackPlugin({
-      template: './src/index.pug',
+      template: 'src/index.pug',
       filename: 'index.html',
-      favicon: '',
+      favicon: 'src/favicon.png',
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
       },
-      inject: false,
-      minify: {
-        collapseWhitespace: false,
-      },
+      chunks: [],
     }),
     new HtmlWebpackPlugin({
-      template: './src/games/starfail/starfail.pug',
+      template: 'src/games/starfail/starfail.pug',
       filename: 'starfail.html',
-      favicon: '',
+      favicon: 'src/favicon.png',
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
       },
       chunks: ['starfail'],
-      minify: {
-        collapseWhitespace: false,
-      },
     }),
   ],
 };
